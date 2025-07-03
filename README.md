@@ -34,7 +34,7 @@ The `GameTool` folder contains utilities and configuration files for both the Mo
 ### Configuration
 - Both the client and server have their own configuration files located in the respective `GameTool/Client/` and `GameTool/Server/` folders.
 - These configs allow you to set up connection parameters and other options for integration with the emulator backend.
-- **Note:** To enable interaction with the official licensed API (so that licensed players can connect), set the `LicenseServer` parameter to `true` in the server config file.
+- **Note:** To enable interaction with the official licensed API (so that licensed players can connect), set the `LicenseServer` parameter to `true` in the server config file(but ip in config set in emulator version. You need to open port if you want create server to license players).
 - Make sure to review and adjust these configuration files as needed for your environment.
 
 ---
