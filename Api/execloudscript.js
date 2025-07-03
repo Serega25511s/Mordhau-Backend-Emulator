@@ -1,6 +1,5 @@
 const { Matches, Users, Inventors, Catalog } = require("../db");
 
-// --- Вспомогательные функции генерации ---
 function makeNumericId(length) {
   let result = "";
   const chars = "0123456789";
@@ -40,7 +39,6 @@ async function getNextRoomId() {
   return room ? room.id + 1 : 200000;
 }
 
-// --- Обработчики функций ---
 async function handleImportInventory(request) {
   const ticket = request.headers["x-authorization"];
   const inventoryDB = await Inventors.findOne({ ticket });
@@ -219,7 +217,6 @@ function handleUnlockItems() {
   };
 }
 
-// --- Основной роут ---
 async function routes(fastify) {
   fastify.post("/Client/ExecuteCloudScript", async (request, reply) => {
     try {

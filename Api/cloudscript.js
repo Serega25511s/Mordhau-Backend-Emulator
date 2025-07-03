@@ -2,7 +2,7 @@ const { Users, Matches, End, Inventors } = require("../db");
 const { Servers } = require("../db");
 const { Awards } = require("../db");
 
-// --- Вспомогательные функции ---
+
 async function getUserByEntityId(entityId) {
   return Users.findOne({ entityid: entityId });
 }
@@ -118,7 +118,6 @@ function buildUpdateEntitlementsResponse() {
   };
 }
 
-// --- Основной роут ---
 async function routes(fastify) {
   fastify.post("/CloudScript/ExecuteEntityCloudScript", async (request, reply) => {
     try {
