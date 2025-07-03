@@ -97,7 +97,7 @@ node index.js
 ---
 
 ## Contribution & Feedback
-We welcome your PRs, bug reports, and suggestions! Open issues or create pull requests.
+Im welcome your PRs, bug reports, and suggestions! Open issues or create pull requests.
 
 ---
 
